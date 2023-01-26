@@ -16,9 +16,27 @@ a {
 }
 
 /*========================
+     Preloader section
+ =========================*/
+.fa-arrow-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 20px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: #00bc9c;
+  border-radius: 50%;
+  z-index: 99;
+  display: none;
+}
+
+/*========================
    header1 section start
  =========================*/
-
 .header1{
   background: #f5f7fa;
   border-bottom: 2px solid #e6e9ed;
@@ -36,10 +54,11 @@ a {
 }
 .info ul li i{
   margin-right: 8px;
-  font-size: 10px;
+  font-size: 16px;
 }
-.info ul li a{
-    color: #506a85;
+.info ul li a {
+  color: #506a85;
+  font-size: 16px;
 }
 .social-link ul{
   padding: 0;
@@ -67,9 +86,6 @@ a {
  }
  .logo{
       width: 134px;
- }
- .navbar-nav{
-     margin-left: 56px;
  }
 .navbar-nav .nav-item{
     margin: 0px 7px;
@@ -283,6 +299,7 @@ padding: 20px 0 0 0;
 }
 .footer2 ul{
  padding: 0;
+ text-align: right;
 }
 .footer2 ul li{
 list-style: none;
@@ -333,9 +350,6 @@ list-style: none;
 .col-sign .image1{
      width: 100%;
 }
-.layers{
-  
-}
 
 /*========================
   footer1 section start
@@ -365,9 +379,6 @@ list-style: none;
       color: #a3b1bf;
     margin-left: 14px;
     font-size: 11px;
-}
-.footer-section a{
-  
 }
 .footer-section2 img{
 width: 100%;
@@ -399,14 +410,14 @@ width: 100%;
   position: relative;
 }
 .footer-section4 form .forms{
- background: #4e5c6c;
+    background: #4e5c6c;
     border: none;
     width: 100%;
     height: 40px;
     color: #fff;
     font-weight: 500;
-    padding: 0 0px 0px 6px;
-    font-size: 18px;
+    padding: 0px 0px 0px 16px;
+    font-size: 16px;
 }
 .footer-section4 form .forms:hover{
   outline: none;
@@ -429,6 +440,9 @@ width: 100%;
       /* responsive for mobile device */ 
 
 @media (min-width: 320px) and (max-width: 576px){
+
+ .fa-arrow-up {bottom: 20px; right: 15px; font-size: 16px; width: 40px; height: 40px; line-height: 40px;}
+
  .social-link ul { margin: 10px 0 12px 0; float:none;}
  .social-link, .info {text-align: center;}
  .navbar-nav {margin-left: 0; margin-top: 20px;}
@@ -462,6 +476,6 @@ width: 100%;
  .footer-section4 p {font-size: 14px; text-align: center; margin-bottom: 30px;}
  .footer2 p { text-align: center;}
  .footer2 ul {text-align: center;}
- .footer-section4 form {padding: 0 60px;}
- .footer-section4 .btn-hash {right: 64px;}
+ .footer-section4 form {padding: 0 0px;}
+ .footer-section4 .btn-hash {right: 6px;}
 }
